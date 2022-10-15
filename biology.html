@@ -18,7 +18,8 @@
 
 	<header> 
 		<nav> 
-			<ul>
+			<a class='toggle-menu' href="#menu">Menu</a>
+			<ul id='#menu'>
 				<li><a href='index.html'>Introduction</a></li>
 				<li><a href='taxevolution.html'>Taxonomy & Evolution</a></li>
 				<li><a href='biology.html'>Biology</a></li>
@@ -50,7 +51,17 @@
 				</div>
 
 				<div>
-					<img src='image/skeleton.jpg' alt='image of dog skeletal structure' />
+					<figure>
+						<img src='image/dog-skeleton.jpg' alt='image of dog skeletal structure' 
+							srcset='image/dog-skeleton-480.jpg 480w, image/dog-skeleton-568.jpg 568w,
+							image/dog-skeleton-768.jpg 768w, image/dog-skeleton-920.jpg 920w',
+							sizes='(min-width: 480px) 480px, (min-width: 568px) 568px, (min-width: 768px) 768px,
+									(min-width: 920px) 920px, 1024px'
+						/>
+						<figcaption>
+							<p><cite><a href='https://en.wikipedia.org/wiki/File:Dog_anatomy_lateral_skeleton_view.jpg'>A lateral view of a dog skeleton</a></cite></p>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</section>
@@ -116,7 +127,17 @@
 				</div>
 
 				<div>
-					<img src='image/nursing-puppies.jpg' alt='image of female dog nursing newborn puppies' />
+					<figure>
+						<img src='image/nursing-puppies.jpg' alt='image of female dog nursing newborn puppies' 
+							srcset='image/nursing-puppies-480.jpg 480w, image/nursing-puppies-568.jpg 568w,
+									image/nursing-puppies-768.jpg 768w, image/nursing-puppies-920.jpg 920w',
+							sizes='(min-width: 480px) 480px, (min-width: 568px) 568px, (min-width: 768px) 768px,
+								   (min-width: 920px) 920px, 1024px'
+						/>
+						<figcaption>
+							<p><cite><a href='https://en.wikipedia.org/wiki/File:S%C3%A4ugende_H%C3%BCndin.JPG'>A female dog nursing newborn puppies.</a></cite></p>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</section>

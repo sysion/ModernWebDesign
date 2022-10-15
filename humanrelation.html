@@ -18,7 +18,8 @@
 
 	<header> 
 		<nav> 
-			<ul>
+			<a class='toggle-menu' href="#menu">Menu</a>
+			<ul id='#menu'>
 				<li><a href='index.html'>Introduction</a></li>
 				<li><a href='taxevolution.html'>Taxonomy & Evolution</a></li>
 				<li><a href='biology.html'>Biology</a></li>
@@ -151,7 +152,17 @@
 			</div>
 
 			<div>
-				<img src='image/walking-dog.jpg' alt='image of walking a dog' />
+				<figure>
+					<img src='image/walking-dog.jpg' alt='image of walking a dog' 
+						 srcset='image/walking-dog-480.jpg 480w, image/walking-dog-568.jpg 568w,
+						         image/walking-dog-768.jpg 768w, image/walking-dog-920.jpg 920w',
+						 sizes='(min-width: 480px) 480px, (min-width: 568px) 568px, (min-width: 768px) 768px,
+						        (min-width: 920px) 920px, 1024px'
+					/>
+					<figcaption>
+						<p><cite><a href='https://en.wikipedia.org/wiki/File:Walking_the_dog_(1945527533).jpg'>Walking a dog</a></cite></p>
+					</figcaption>
+				</figure>
 			</div>
 		</section>
 
@@ -176,7 +187,7 @@
 			</div>
 
 			<div>
-				<img src='cerberus-blake.jpg' alt='image of cerberus, with the gluttons' />
+				<img src='image/cerberus-blake.jpg' alt='image of cerberus, with the gluttons' />
 			</div>
 		</section>
 		

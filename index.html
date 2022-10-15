@@ -8,17 +8,23 @@
 		<meta name="HandheldFriendly" content="true">  
 		<meta name='title' content="Man's Best Friend" />
 
+		<link rel='stylesheet' href='css/normalize.css' />
 		<link rel='stylesheet' href='css/style.css' />
 		<link rel='shortcut icon' href='favicon.ico' />
 
 		<title>Man's Best Friend</title>
+
+		<!-- Polyfill for Picture element -->
+		<script>document.createElement( "picture" );</script>
+		<script src="js/picturefill.min.js" async></script>
 	</head>
 
 <body>
 
 	<header> 
 		<nav> 
-			<ul>
+			<a class='toggle-menu' href="#menu">Menu</a>
+			<ul id='#menu'>
 				<li><a href='index.html'>Introduction</a></li>
 				<li><a href='taxevolution.html'>Taxonomy & Evolution</a></li>
 				<li><a href='biology.html'>Biology</a></li>
@@ -35,7 +41,7 @@
 		</p>
 
 		<p>
-			The dog has been <a href=''>selectively bred</a> over millennia for various behaviors, sensory capabilities, and physical attributes. <a href=''>Dog breeds</a> vary widely in shape, size, and color. They perform many roles for humans, such as <i>hunting, herding, pulling loads, protection, assisting police</i> and the <i>military, companionship, therapy</i>, and <i>aiding disabled people</i>. Over the millennia, dogs became uniquely adapted to human behavior, and the <em>human-canine bond</em> has been a topic of frequent study. This influence on human society has given them the sobriquet of "man's best friend".
+			The dog has been <a href='https://en.wikipedia.org/wiki/Selective_breeding'>selectively bred</a> over millennia for various behaviors, sensory capabilities, and physical attributes. <a href='https://en.wikipedia.org/wiki/Dog_breed'>Dog breeds</a> vary widely in shape, size, and color. They perform many roles for humans, such as <i>hunting, herding, pulling loads, protection, assisting police</i> and the <i>military, companionship, therapy</i>, and <i>aiding disabled people</i>. Over the millennia, dogs became uniquely adapted to human behavior, and the <em>human-canine bond</em> has been a topic of frequent study. This influence on human society has given them the sobriquet of "man's best friend".
 		</p>
 	</main>
 
