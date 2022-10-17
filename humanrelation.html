@@ -11,14 +11,14 @@
 		<link rel='stylesheet' href='css/style.css' />
 		<link rel='shortcut icon' href='favicon.ico' />
 
-		<title>Man's Best Friend</title>
+		<title>Dog's Relationship</title>
 	</head>
 
 <body>
 
 	<header> 
+		<a class='toggle-menu' href="#menu">Menu</a>
 		<nav> 
-			<a class='toggle-menu' href="#menu">Menu</a>
 			<ul id='#menu'>
 				<li><a href='index.html'>Introduction</a></li>
 				<li><a href='taxevolution.html'>Taxonomy & Evolution</a></li>
@@ -28,6 +28,7 @@
 				<li><a href='humanrelation.html'>Human Relation</a></li>
 			</ul>
 		</nav>
+		<h1>Man's Best Friend</h1>
 	</header>
 
 	<main> 
@@ -187,7 +188,17 @@
 			</div>
 
 			<div>
-				<img src='image/cerberus-blake.jpg' alt='image of cerberus, with the gluttons' />
+				<figure>
+					<img src='image/cerberus-blake.jpg' alt='image of cerberus, with the gluttons' 
+						 srcset='image/cerberus-blake-480.jpg 480w, image/cerberus-blake-568.jpg 568w,
+						         image/cerberus-blake-768.jpg 768w, image/cerberus-blake-920.jpg 920w',
+						 sizes='(min-width: 480px) 480px, (min-width: 568px) 568px, (min-width: 768px) 768px,
+						        (min-width: 920px) 920px, 1024px'
+					/>
+					<figcaption>
+						<p><cite><a href='https://en.wikipedia.org/wiki/File:Cerberus-Blake.jpeg'>Cerberus, with the gluttons in Dante's Third Circle of Hell. William Blake.</a></cite></p>
+					</figcaption>
+				</figure>
 			</div>
 		</section>
 		
