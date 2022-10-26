@@ -1,18 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset='utf-8' />
 	    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-	    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0' />  
+	    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0' />  
 	    <meta name="MobileOptimized" content="width">
 		<meta name="HandheldFriendly" content="true">   
-		<meta name='title' content='' />
+		<meta name='title' content="Dog's Taxonomy & Evolution" />
+		<meta name='description' content="Dog is man's Best Friend" />
+
+		<!-- This method does not requires additional http request as the font file is already downloaded to your system -->
+		<!-- Preload actual font files in order to resolve flickering of page when loading these fonts -->
+		<!--link rel='preload' href='css/fonts/tangerine-v17-latin/tangerine-v17-latin-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous' />
+		<link rel='preload' href='css/fonts/tangerine-v17-latin/tangerine-v17-latin-regular.woff' as='font' type='font/woff' crossorigin='anonymous' />
+		<link rel='preload' href='css/fonts/oxygen-v15-latin/oxygen-v15-latin-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous' />
+		<link rel='preload' href='css/fonts/oxygen-v15-latin/oxygen-v15-latin-regular.woff' as='font' type='font/woff' crossorigin='anonymous' /-->
+		
+		<!-- This method requires additional http request for custom_fonts.css file -->
+		<!-- Preload custom_fonts.css stylesheet in order to resolve flickering of page when loading these fonts -->
+		<link rel='stylesheet preload' href='css/style.css' as='style' crossorigin='anonymous' />  <!-- preload css file -->
+		<!--link rel='stylesheet' href='css/custom_fonts.css' /-->  <!-- use preloaded css file -->
+		<!--link rel='stylesheet preload' href='css/custom_fonts.css?family=Tangerine|Oxygen' as='style' crossorigin='anonymous' /-->
+		<!--link rel='stylesheet' href='css/custom_fonts.css' media='print' onload="this.media='all'" lazyload /-->
+		<!--noscript><link rel='stylesheet' href='css/custom_fonts.css' /></noscript-->
 
 		<link rel='stylesheet' href='css/normalize.css' />
 		<link rel='stylesheet' href='css/style.css' />
+
 		<link rel='shortcut icon' href='favicon.ico' />
 
 		<title>Dog's Taxonomy & Evolution</title>
+
+		<link rel='manifest' href='manifest.json'>
+		<meta name="theme-color" content="#090a0b">
+
+		<!-- ios support -->
+		<link rel="apple-touch-icon" href="/images/icon-192x192.png">
+		<link rel="apple-touch-icon" href="/images/icon-256x256.png">
+		<meta name="apple-mobile-web-app-status-bar" content="#090a0b">
 	</head>
 
 <body>
@@ -88,6 +113,7 @@
 
 	<footer>&copy;2022 Sysion Nigeria Limited</footer>
 
+	<script src='js/prefixfree.min.js'></script>
 	<script src='js/main.js'></script>
 </body>
 </html>
