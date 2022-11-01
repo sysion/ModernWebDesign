@@ -9,20 +9,7 @@
 		<meta name='title' content="Dog's Anatomy" />
 		<meta name='description' content="Dog is man's Best Friend" />
 
-		<!-- This method does not requires additional http request as the font file is already downloaded to your system -->
-		<!-- Preload actual font files in order to resolve flickering of page when loading these fonts -->
-		<!--link rel='preload' href='css/fonts/tangerine-v17-latin/tangerine-v17-latin-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous' />
-		<link rel='preload' href='css/fonts/tangerine-v17-latin/tangerine-v17-latin-regular.woff' as='font' type='font/woff' crossorigin='anonymous' />
-		<link rel='preload' href='css/fonts/oxygen-v15-latin/oxygen-v15-latin-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous' />
-		<link rel='preload' href='css/fonts/oxygen-v15-latin/oxygen-v15-latin-regular.woff' as='font' type='font/woff' crossorigin='anonymous' /-->
-		
-		<!-- This method requires additional http request for custom_fonts.css file -->
-		<!-- Preload custom_fonts.css stylesheet in order to resolve flickering of page when loading these fonts -->
 		<link rel='stylesheet preload' href='css/style.css' as='style' crossorigin='anonymous' />  <!-- preload css file -->
-		<!--link rel='stylesheet' href='css/custom_fonts.css' /-->  <!-- use preloaded css file -->
-		<!--link rel='stylesheet preload' href='css/custom_fonts.css?family=Tangerine|Oxygen' as='style' crossorigin='anonymous' /-->
-		<!--link rel='stylesheet' href='css/custom_fonts.css' media='print' onload="this.media='all'" lazyload /-->
-		<!--noscript><link rel='stylesheet' href='css/custom_fonts.css' /></noscript-->
 
 		<link rel='stylesheet' href='css/normalize.css' />
 		<link rel='stylesheet' href='css/style.css' />
@@ -31,6 +18,10 @@
 
 		<title>Dog's Anatomy</title>
 
+		<!-- Polyfill for Picture element -->
+		<script>document.createElement("picture");</script>
+		<script src="js/picturefill.min.js" async></script>
+
 		<link rel='manifest' href='manifest.json'>
 		<meta name="theme-color" content="#090a0b">
 
@@ -38,6 +29,9 @@
 		<link rel="apple-touch-icon" href="/images/icon-192x192.png">
 		<link rel="apple-touch-icon" href="/images/icon-256x256.png">
 		<meta name="apple-mobile-web-app-status-bar" content="#090a0b">
+
+		<!-- force Safari browsers to run in standalone mode as defined in manifest.json -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
 	</head>
 
 <body>
@@ -66,9 +60,6 @@
 			<div class='wrapper-text'>
 				<div class='wrapper-img'>
 					<figure>
-						<!-- sizes consider width and device-pixel-ratio(DPR), hence it better tu use
-							 relative measure like vw, vh. NOTE that percentage relative measure is
-							 not allowed -->
 						<img src='image/dog-skeleton.jpg' alt='image of dog skeletal structure' 
 							srcset='image/dog-skeleton-480.jpg 480w, image/dog-skeleton-568.jpg 568w,
 							image/dog-skeleton-768.jpg 768w, image/dog-skeleton-920.jpg 920w',
@@ -76,7 +67,6 @@
 									(min-width: 920px) 100vw, 920px'
 						/>
 						<figcaption>
-							<!--p><cite><a href='https://en.wikipedia.org/wiki/File:Dog_anatomy_lateral_skeleton_view.jpg'>A lateral view of a dog skeleton</a></cite></p-->
 							<p><i>A lateral view of a dog skeleton</i></p>
 						</figcaption>
 					</figure>
@@ -144,9 +134,6 @@
 			<div class='wrapper-text'>
 				<div class='wrapper-img'>
 					<figure>
-						<!-- sizes consider width and device-pixel-ratio(DPR), hence it better tu use
-							 relative measure like vw, vh. NOTE that percentage relative measure is
-							 not allowed -->
 						<img src='image/nursing-puppies.jpg' alt='image of female dog nursing newborn puppies' 
 							srcset='image/nursing-puppies-480.jpg 480w, image/nursing-puppies-568.jpg 568w,
 									image/nursing-puppies-768.jpg 768w, image/nursing-puppies-920.jpg 920w',
@@ -154,7 +141,6 @@
 								   (min-width: 920px) 100vw, 920px'
 						/>
 						<figcaption>
-							<!--p><cite><a href='https://en.wikipedia.org/wiki/File:S%C3%A4ugende_H%C3%BCndin.JPG'>A female dog nursing newborn puppies.</a></cite></p-->
 							<p><i>A female dog nursing newborn puppies.</i></p>
 						</figcaption>
 					</figure>

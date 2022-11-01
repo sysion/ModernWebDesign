@@ -4,6 +4,7 @@
     "display": "standalone",
     "orientation": "portrait-primary",
     "start_url": "index.html",
+    "scope": "/",
     "name": "MWD",
     "short_name": "MWD",
     "description": "Modern web design project",
