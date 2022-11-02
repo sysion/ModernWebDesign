@@ -120,7 +120,7 @@ const cachedAssets = [
   './ModernWebDesign/icons/icon-512x512.png',
   './ModernWebDesign/icons/icon-384x384.png',
   './ModernWebDesign/icons/icon-256x256.png',
-  './ModernWebDesign/icons/icon-192x192.png',
+  './ModernWebDesign/icons/icon-192x192.png'
 ];
 
 // The install handler takes care of precaching the resources we always need.
