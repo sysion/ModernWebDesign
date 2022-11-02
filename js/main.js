@@ -111,7 +111,7 @@
       if (navigator && navigator.serviceWorker) {
         window.addEventListener('load', () => {
           //navigator.serviceWorker.register('../sw.js').then((registration) => {
-          navigator.serviceWorker.register('../sw.js', {scope: '/'}).then((registration) => {
+          navigator.serviceWorker.register('../ModernWebDesign/sw.js', {scope: '/ModernWebDesign/'}).then((registration) => {
             //registration was successful
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, function(err) {
